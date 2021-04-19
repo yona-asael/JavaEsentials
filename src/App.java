@@ -1,6 +1,8 @@
 import entities.Animal;
+import entities.CarLight;
 import entities.Cow;
 import entities.Dog;
+import entities.Light;
 
 public class App {
 
@@ -18,6 +20,12 @@ public class App {
         System.out.println(cow.toString());
         cow.doMu();
         cow.doWalk();
+
+        CarLight carLight = new CarLight("High");
+        carLight.turnOnTheLight();
+
+        Light light = (Light)carLight;
+        light.turnOnTheLight();
     }
 
 }
