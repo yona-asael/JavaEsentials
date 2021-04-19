@@ -2,6 +2,7 @@ import entities.Animal;
 import entities.CarLight;
 import entities.Cow;
 import entities.Dog;
+import entities.DomesticLight;
 import entities.Light;
 
 public class App {
@@ -26,6 +27,12 @@ public class App {
 
         Light light = (Light)carLight;
         light.turnOnTheLight();
+
+        DomesticLight domesticLight = new DomesticLight("High");
+        domesticLight.turnOnTheLight();
+        
+        Light dLight =(Light)domesticLight;
+        dLight.turnOnTheLight();
     }
 
 }
