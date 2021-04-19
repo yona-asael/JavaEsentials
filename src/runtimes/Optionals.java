@@ -3,6 +3,9 @@ package runtimes;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+import entities.Cow;
+import entities.Dog;
+
 public class Optionals {
     
     public static void run() {
@@ -39,6 +42,13 @@ public class Optionals {
         } else {
             System.out.println("In not empty");
         }
+
+        Optional<Cow> cow = Optional.ofNullable(new Cow());
+        cow.ifPresent( (log) -> log.doMu());
+        cow.ifPresentOrElse((log) -> System.out.println(log.getType()), () -> System.out.println("No existe") );
+        Optional<Dog> dog = Optional.ofNullable(new Dog());
+        dog = Optional.ofNullable(dog).orElseThrow(() -> new NoSuchElementException("Dog not exists") );
+
     }
 
 }
