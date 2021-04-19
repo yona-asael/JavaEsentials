@@ -1,0 +1,22 @@
+Realizar un corral de animales el cual sera lo siguiente
+Una  abstracta clase  FarmAnimal que contenga las propiedades nombre y peso
+Nombre sera tipo String
+Peso sera tipo doble
+Contendra un metodo abstracto que se llame details
+
+Con la clase abstracta animal la agregaras tres clases Gallina, Caballo y Burro
+estos el metodo abstracto details dira sus detalles y el tipo de animal
+
+Se creeara una clase llamada corral la cual contenga un array de animales con opcionales
+Optional<Animals>[] animals, cuando se inicie el constructor se agregaran los animales y los conviertas a un opcional.
+Una funcion que sume todos los pesos
+Una funcion que te de todos los nombre
+una funcion que filtre por su nombre
+una funcion que filtre todos por su nombre y retorne un verdadero o falso si existe
+Agregar esta programacion dentro la clase HomeWork.java y las clases en el paquete Corral
+
+Para hacer un test del corral deberas contener los siguientes datos
+[new Hen("Martha", 10), new Horse("Spirit", 500), new Donkey("Doby", 250))]
+simularemos que un lobo se comio a marta
+[null, new Horse("Spirit", 500), new Donkey("Doby", 250))]
+        
