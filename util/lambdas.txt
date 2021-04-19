@@ -1,0 +1,7 @@
+Supplier       ()    -> x
+Consumer       x     -> ()
+Callable       ()    -> x throws ex
+Runnable       ()    -> ()
+Function       x     -> y
+BiFunction     x,y   -> z
+Predicate      x     -> boolean
