@@ -8,8 +8,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Essentials.run(false);
         Optionals.run(false);
-        HomeWork.run(false);
-        Streams.run();
+        HomeWork.run(true);
+        Streams.run(false);
     }
 
 }
