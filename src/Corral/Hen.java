@@ -2,7 +2,7 @@ package Corral;
 
 public class Hen extends FarmAnimal {
     public Hen() {
-        super("Martha", 10);
+        super("Martha", Double.valueOf("10"));
     }
 
     public void nameHen() {

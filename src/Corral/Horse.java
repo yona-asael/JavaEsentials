@@ -2,7 +2,7 @@ package Corral;
 
 public class Horse extends FarmAnimal {
     public Horse() {
-        super("Spirit", 500);
+        super("Spirit",  Double.valueOf("500"));
     }
 
     public void nameHorse() {
