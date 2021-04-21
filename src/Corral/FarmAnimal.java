@@ -1,12 +1,14 @@
 package Corral;
 
+import java.math.BigDecimal;
+
 public abstract class FarmAnimal {
     protected String name;
-    protected Double weight;
+    protected BigDecimal weight;
 
     public abstract void details();
 
-    public FarmAnimal(String name, Double weight) {
+    public FarmAnimal(String name, BigDecimal weight) {
         this.setName(name);
         this.setWeight(weight);
     }
@@ -19,11 +21,11 @@ public abstract class FarmAnimal {
         this.name = name;
     }
 
-    public Double getWeight() {
+    public BigDecimal getWeight() {
         return this.weight;
     }
 
-    public void setWeight(Double weight) {
+    public void setWeight(BigDecimal weight) {
         this.weight = weight;
     }
 }

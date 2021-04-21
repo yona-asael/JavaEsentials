@@ -1,8 +1,10 @@
 package Corral;
 
+import java.math.BigDecimal;
+
 public class Donkey extends FarmAnimal {
     public Donkey() {
-        super("Doby",  Double.valueOf("200"));
+        super("Doby",  BigDecimal.valueOf(200));
     }
 
     public void nameDonkey() {
